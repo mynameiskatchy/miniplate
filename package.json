@@ -4,7 +4,8 @@
   "description": "https://www.c-sharpcorner.com/article/setup-react-app-using-node-js-webpack-and-typescript/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-test": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/mynameiskatchy/typescript_boilerplate/issues"
   },
-  "homepage": "https://github.com/mynameiskatchy/typescript_boilerplate#readme"
+  "homepage": "https://github.com/mynameiskatchy/typescript_boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
