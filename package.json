@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/mynameiskatchy/typescript_boilerplate#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "webpack": "^4.42.0",
+    "webpack-dev-server": "^3.10.3"
   }
 }
