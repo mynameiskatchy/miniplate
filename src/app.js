@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import Main from './components/main.jsx';
+import Main from './components/main.jsx';
 
 // ReactDOM.render(<Main />, document.getElementById('app'));
 // ReactDOM.render(
@@ -9,4 +9,9 @@ import ReactDOM from 'react-dom';
 // );
 
 
-ReactDOM.render(<div>Hi from root react compoenent</div>, document.getElementById('app'));
+ReactDOM.render(
+<div>
+    Hi from root react compoenent 
+    <Main /> 
+</div>, 
+document.getElementById('app'));

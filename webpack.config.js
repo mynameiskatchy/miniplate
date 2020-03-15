@@ -12,13 +12,13 @@ module.exports = {
         rules: [
             {
             loader: 'babel-loader',
-            test: /\.js$/,
+                test: /\.(js)x?$/,
             exclude: /node_modules/
         }
     ]
     },
     resolve: {
-        extensions: ["*", ".js", ".jsx"]
+        extensions: [".js", ".jsx"]
     },
     mode: 'development',
     devServer: {
