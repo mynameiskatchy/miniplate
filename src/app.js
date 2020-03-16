@@ -11,7 +11,7 @@ import Main from './components/main.jsx';
 
 ReactDOM.render(
 <div>
-    Hi from root react compoenent 
+    This is app.js
     <Main /> 
 </div>, 
 document.getElementById('app'));

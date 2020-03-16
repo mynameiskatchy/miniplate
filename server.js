@@ -5,8 +5,19 @@ var app = express();
 
 var port = 5000;
 
-app.get('/', function (req, res) {
-    res.send('<html><body><h2>Congrts!!! Server Configured</h2</body></html>');
+// PUBLIC_DIR = path.resolve(__dirname, 'public')
+// HTML_FILE = path.join(PUBLIC_DIR, 'index.html')
+
+// app.use(express.static(PUBLIC_DIR))
+
+// app.get('/', (req, res) => {
+//     res.send(HTML_FILE)
+// })
+
+app.use(express.static('public'));  // where index.html and webpack bundle reside
+
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 app.get('/api', function (req, res) {
