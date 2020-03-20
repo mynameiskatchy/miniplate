@@ -6,13 +6,14 @@ module.exports = {
     entry: './src/app.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'build'),
+        publicPath: ''
     },
     module: {
         rules: [
             {
             loader: 'babel-loader',
-                test: /\.(js)x?$/,
+            test: /\.(js)x?$/,
             exclude: /node_modules/
         }
     ]
@@ -22,7 +23,7 @@ module.exports = {
     },
     mode: 'development',
     devServer: {
-        contentBase: path.resolve(__dirname, 'public')
+        contentBase: path.resolve(__dirname, 'build')
     }
 
 };

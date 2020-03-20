@@ -14,12 +14,21 @@ var port = 5000;
 //     res.send(HTML_FILE)
 // })
 
-app.use(express.static('public'));  // where index.html and webpack bundle reside
+app.use(express.static('build'));  // where index.html and webpack bundle reside
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
+    res.sendFile(path.join(__dirname + '/build/index.html'));
 });
 
+/// testing
+// app.use(express.static('assets'));  // where index.html and webpack bundle reside
+
+// app.get('*', function (req, res) {
+//     res.sendFile(path.join(__dirname + '/assets/index.html'));
+// });
+
+
+//// testing
 app.get('/api', function (req, res) {
     res.send('<p>This is a api Data</p>');
 });
@@ -31,3 +40,4 @@ app.listen(port, function (error) {
         console.log("Application running on port: " + port);
     }
 })  
+
