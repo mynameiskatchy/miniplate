@@ -1,1 +1,13 @@
+# node
+package-lock.json
 node_modules/
+
+# webpack
+*bundle.js
+
+# miscellaneous 
+*DS_Store
+
+
+
+# testing related
