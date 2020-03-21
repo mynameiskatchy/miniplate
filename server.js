@@ -1,32 +1,14 @@
-var express = require('express');
 var path = require('path');
+var express = require('express');
 
 var app = express();
-
 var port = 5000;
-
-// PUBLIC_DIR = path.resolve(__dirname, 'public')
-// HTML_FILE = path.join(PUBLIC_DIR, 'index.html')
-
-// app.use(express.static(PUBLIC_DIR))
-
-// app.get('/', (req, res) => {
-//     res.send(HTML_FILE)
-// })
 
 app.use(express.static('build'));  // where index.html and webpack bundle reside
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname + '/build/index.html'));
+    res.sendFile(path.join(__dirname + '/build/' + 'index.html'));
 });
-
-/// testing
-// app.use(express.static('assets'));  // where index.html and webpack bundle reside
-
-// app.get('*', function (req, res) {
-//     res.sendFile(path.join(__dirname + '/assets/index.html'));
-// });
-
 
 //// testing
 app.get('/api', function (req, res) {
