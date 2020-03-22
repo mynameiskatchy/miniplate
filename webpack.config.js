@@ -1,3 +1,8 @@
+/** 
+ * webpack.config.js
+ * To configure webpack to build javascript bundle
+ */
+
 var path = require("path");
 
 module.exports = {
@@ -5,7 +10,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build'),
-        publicPath: ''
+        publicPath: '/'
     },
     module: {
         rules: [

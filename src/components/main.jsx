@@ -1,3 +1,8 @@
+/**
+ * main.jsx 
+ * To house main component of react app
+ */
+
 import React from 'react';
 
 class Main extends React.Component {

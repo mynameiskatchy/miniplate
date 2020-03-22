@@ -1,3 +1,8 @@
+/**
+ * server.js
+ * To set up express server to load bundle.js and index.html files
+ */
+
 var path = require('path');
 var express = require('express');
 

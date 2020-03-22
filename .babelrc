@@ -1,3 +1,8 @@
+/**
+ * .babelrc
+ * to configure babel presets for webpack bundling
+ */
+
 {
     "presets": [
         "@babel/preset-env",
