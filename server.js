@@ -6,8 +6,13 @@
 var path = require('path');
 var express = require('express');
 
+
 var app = express();
 var port = 5000;
+
+// const {
+//     PORT = 5000,
+// } = process.env;
 
 app.use(express.static('build'));  // where index.html and webpack bundle reside
 
@@ -24,7 +29,7 @@ app.listen(port, function (error) {
     if (error) {
         console.log(error);
     } else {
-        console.log("Application running on port: " + port);
+        console.log('Application server started at http://localhost:' + port);
     }
 })  
 
