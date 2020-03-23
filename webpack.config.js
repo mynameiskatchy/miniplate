@@ -25,6 +25,7 @@ module.exports = {
             '.js', '.jsx',
             '.ts', '.tsx'
         ],
+    },
     // to specify loaders to load static assets to webpack
     module: {
         rules: [
@@ -41,7 +42,6 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    },
     },
     mode: 'development',
     // target: 'node'.
