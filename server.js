@@ -15,7 +15,6 @@ const app = express();
 const PORT = 5000;
 
 app.use(express.static('build')); 
-app.use(express.static('assets')); 
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/build/', 'index.html'));
