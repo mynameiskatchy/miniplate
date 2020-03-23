@@ -3,12 +3,11 @@
  * To set up express server to load bundle.js and index.html files
  */
 
-var path = require('path');
-var express = require('express');
+const path = require('path');
+const express = require('express');
 
-
-var app = express();
-var port = 5000;
+const app = express();
+const PORT = 5000;
 
 // const {
 //     PORT = 5000,
@@ -25,11 +24,11 @@ app.get('/api', function (req, res) {
     res.send('<p>This is a api Data</p>');
 });
 
-app.listen(port, function (error) {
+app.listen(PORT, function (error) {
     if (error) {
         console.log(error);
     } else {
-        console.log('Application server started at http://localhost:' + port);
+        console.log('Application server started at http://localhost:%s', PORT);
     }
 })  
 
