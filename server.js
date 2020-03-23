@@ -20,8 +20,7 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/build/', 'index.html'));
 });
 
-app.use(
-    middleware(compiler, {
+app.use(middleware(compiler, {
         noInfo: true, 
         publicPath: webpack_config_options.output.publicPath
     })
