@@ -6,23 +6,27 @@
 const path = require('path');
 const express = require('express');
 
+const webpack = require('webpack');
+const middleware = require('webpack-dev-middleware');
+const webpack_config_options = require('./webpack.config');
+const compiler = webpack(webpack_config_options);
+
 const app = express();
 const PORT = 5000;
 
-// const {
-//     PORT = 5000,
-// } = process.env;
+app.use(express.static('build')); 
+app.use(express.static('assets')); 
 
-app.use(express.static('build'));  // where index.html and webpack bundle reside
-
-app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname + '/build/' + 'index.html'));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '/build/', 'index.html'));
 });
 
-//// testing
-app.get('/api', function (req, res) {
-    res.send('<p>This is a api Data</p>');
-});
+app.use(
+    middleware(compiler, {
+        noInfo: true, 
+        publicPath: webpack_config_options.output.publicPath
+    })
+);
 
 app.listen(PORT, function (error) {
     if (error) {
@@ -32,3 +36,9 @@ app.listen(PORT, function (error) {
     }
 })  
 
+
+
+//// testing
+app.get('/api', function (req, res) {
+    res.send('<p>This is a api Data</p>');
+});

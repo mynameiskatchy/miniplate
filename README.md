@@ -15,6 +15,7 @@ Resources consulted
  https://webpack-gatsby.netlify.com/configuration/
  https://medium.com/@jeffrey.allen.lewis/the-ultimate-2018-webpack-4-and-babel-setup-guide-npm-yarn-dependencies-compared-entry-points-866b577da6a
  https://medium.com/the-andela-way/how-to-set-up-an-express-api-using-webpack-and-typescript-69d18c8c4f52
+ https://github.com/webpack-contrib/file-loader/issues/46
 
 
 
