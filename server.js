@@ -8,11 +8,12 @@ const express = require('express');
 
 const webpack = require('webpack');
 const middleware = require('webpack-dev-middleware');
-const webpack_config_options = require('./webpack.config');
-const compiler = webpack(webpack_config_options);
+const webpackConfigOptions = require('./webpack.config');
+const compiler = webpack(webpackConfigOptions);
 
 const app = express();
 const PORT = 5000;
+
 
 app.use(express.static('build')); 
 
@@ -22,7 +23,7 @@ app.get('/', function (req, res) {
 
 app.use(middleware(compiler, {
         noInfo: true, 
-        publicPath: webpack_config_options.output.publicPath
+        publicPath: webpackConfigOptions.output.publicPath
     })
 );
 
