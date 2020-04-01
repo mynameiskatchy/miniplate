@@ -18,5 +18,9 @@ Resources consulted
  https://github.com/webpack-contrib/file-loader/issues/46
  https://www.robinwieruch.de/javascript-naming-conventions
  https://nodejs.dev/the-package-json-guide
+ https://medium.com/a-beginners-guide-for-webpack-2/webpack-loaders-css-and-sass-2cc0079b5b3a
+ https://blog.jakoblind.no/css-modules-webpack/
+ https://css-tricks.com/css-modules-part-1-need/
+ https://stackoverflow.com/questions/27218879/link-a-css-on-another-folder
 
 

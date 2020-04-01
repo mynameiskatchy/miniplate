@@ -35,7 +35,15 @@ module.exports = {
     // to specify loaders to load static assets to webpack
     module: {
         rules: [
-
+            // css style sheet files
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            
             // javascript & jsx files
             {
                 loader: 'babel-loader',
@@ -49,6 +57,7 @@ module.exports = {
                 test: /\.(ts)x?$/,
                 exclude: /node_modules/
             }
+
         ]
     },
     mode: 'development',

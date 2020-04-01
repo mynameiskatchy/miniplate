@@ -4,6 +4,7 @@
  */
 
 import * as React from 'react';
+import '../styles/main.css';
 
 class Main extends React.Component<any, any> {
     render() {
