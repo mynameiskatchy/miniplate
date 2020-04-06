@@ -23,4 +23,14 @@ Resources consulted
  https://css-tricks.com/css-modules-part-1-need/
  https://stackoverflow.com/questions/27218879/link-a-css-on-another-folder
 
-
+CSS Resources
+https://stackoverflow.com/questions/5958699/difference-between-margin-and-padding
+https://coolors.co/392f5a-ebf5ee-ffeead-db5461-232020
+https://www.w3schools.com/css/css3_borders.asp
+https://www.w3.org/Style/Examples/007/units.en.html
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+https://stackoverflow.com/questions/8715860/what-does-mean-in-css
+https://alligator.io/css/centering-using-flexbox/
+https://forums.asp.net/t/1556629.aspx?what+does+this+mean+and+in+CSS+file+
+https://stackoverflow.com/questions/46989454/class-vs-classname-in-react-16
+https://dev.to/fullstack_to/units-in-css-em-rem-pt-px-vw-vh-vmin-vmax-ex-ch-53l0

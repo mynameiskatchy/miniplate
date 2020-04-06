@@ -10,7 +10,11 @@ class Main extends React.Component<any, any> {
 
     render() {
         return(
-            <h2>Hello World !</h2>
+            <h2 id="content" className="">
+                Hello world! Welcome to my boilerplate project!
+                <br/>
+                I made it to be minimalistic & light-weight!
+            </h2>
         );
     }
 }

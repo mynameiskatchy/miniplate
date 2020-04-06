@@ -1,44 +1,50 @@
-/* Reqs */
+/* EXTERNALS */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
 
-html {
-    font-size: 100%;
+* { /* Reset default CSS */
+    margin: 0em;
+    padding: 0em;
 }
 
-/* Typography */
+/* Typography Elements */
 h1 {
-    margin: 0rem;
-
-    display: flex;
-    justify-content: center;
-
     font-family: 'Euphoria Script', cursive;
-    color: #DB5461;
-    font-size: 12rem;
+    font-size: 8em;
+    color: #68A691;
+    text-shadow: 2px 2px 5px #DB5461;
 }
 
-h2 {
-    
-}
-
-/* Containers */
-body {
-    margin: 0rem; 
-    height: 100vh;
+/* Selectors for DOM elements */
+body { /* Main element container*/
     background-color: #FFEEAD;
-    
+    text-align: center;
+}
+
+main {
+    font-size: 2vw;
+}
+
+/* Selectors for classes */
+.center-all {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    color: #EBF5EE;
+    align-items: center;
+    height: 100vh;
+    
 }
 
-div {
-    background-color: #EBF5EE;
-
-    padding: 1em;
+/* Selectors for IDs */
+#content {
+    padding: 1em 5em 1em 5em;
     border-radius: 8em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0em 0em 1em 0.25em #F4F1DE;
 
+    font-family: 'Source Code Pro', monospace;
     color: #392F5A;
+    font-weight: 500;
+    font-size: 2vw;
 }
