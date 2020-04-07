@@ -1,3 +1,8 @@
+/**
+ * app.css
+ * To add css styles to app.js && index.html
+ */ 
+
 /* EXTERNALS */
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap'); 
@@ -8,22 +13,20 @@
     padding: 0em;
 }
 
-/* Typography Elements */
+/* Selectors for DOM tags */
+body { /* Main element container*/
+    background-color: #FFEEAD;
+}
+
+main {
+    font-size: 2vw;
+}
+
 h1 {
     font-family: 'Euphoria Script', cursive;
     font-size: 8em;
     color: #68A691;
     text-shadow: 2px 2px 5px #DB5461;
-}
-
-/* Selectors for DOM elements */
-body { /* Main element container*/
-    background-color: #FFEEAD;
-    text-align: center;
-}
-
-main {
-    font-size: 2vw;
 }
 
 /* Selectors for classes */
@@ -33,18 +36,17 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 
 /* Selectors for IDs */
 #content {
+    background-color: rgb(255, 255, 255);
     padding: 1em 5em 1em 5em;
     border-radius: 8em;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0em 0em 1em 0.25em #F4F1DE;
 
     font-family: 'Source Code Pro', monospace;
-    color: #392F5A;
-    font-weight: 500;
     font-size: 2vw;
+    font-weight: 500;
+    color: #392F5A;
 }

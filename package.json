@@ -2,12 +2,13 @@
   "name": "typescript_boilerplate",
   "version": "1.0.0",
   "description": "Attempt at a simple boilerplate for react, webpack, express, babel, css, and typescript",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server-test": "nodemon server.js",
+    "dev-server-start": "nodemon server.js",
     "build": "webpack",
-    "start": "webpack-dev-server --watch"
+    "start": "webpack-dev-server --watch",
+    "run": "node server.js"
   },
   "repository": {
     "type": "git",

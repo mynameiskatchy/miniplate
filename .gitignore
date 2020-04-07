@@ -1,9 +1,9 @@
 ##
 # .gitignore
+# To specify files to ignore when updating repository
 #
 
 # node
-package-lock.json
 node_modules/
 
 # webpack
@@ -12,6 +12,3 @@ node_modules/
 # miscellaneous 
 *DS_Store
 
-
-
-# testing related

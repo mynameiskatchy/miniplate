@@ -11,12 +11,12 @@ class Main extends React.Component<any, any> {
     render() {
         return(
             <h2 id="content" className="">
-                Hello world! Welcome to my boilerplate project!
+                Hello world! Welcome to my boilerplate project.
                 <br/>
-                I made it to be minimalistic & light-weight!
+                It's super minimalistic and light-weight!
             </h2>
         );
     }
 }
 
-export default Main;
+export default Main; 
