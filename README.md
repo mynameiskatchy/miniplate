@@ -1,30 +1,21 @@
-# README.md: miniplate
+README.md:
 
-Miniplate is a minimalistic and unopinionated boilerplate to jumpstart the app set-up process without the bloat. This boilerplate makes use of node/express, babel, webpack, react, typescript, and css, along with hot-reloading via nodemon and webpack.
+# miniplate
+
+Miniplate is a minimalistic and unopinionated boilerplate to jumpstart the app set-up process without the excess bloat. This boilerplate makes use of node/express, babel, webpack, react, typescript, and css, along with hot-reloading via nodemon and webpack.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+The server.js file is in the root folder, index.html is in the build folder, and the rest of the app in the src folder. The build script will use webpack to create a bundle.js in the build folder to go with the index.html file.
 
-### Prerequesites
-
-Node.js and npm
-
-### Installing
-
-After cloning repo, install node module dependencies via terminal:
+After cloning repo, install node module dependencies via terminal, and build webpack bundle:
 
 ```bash
 npm install
-```
-
-Next, build webpack bundle. This will output a bundle.js file in the build to be referenced by index.html.
-
-```bash
 npm build
 ```
 
-Next, you can start the project in a few ways (via node server or webpack depending on your needs):
+Next, you can start the project in a few ways (via node server or webpack depending on your needs), and the link outputted to terminal to view the app:
 
 via webpack dev server
 
